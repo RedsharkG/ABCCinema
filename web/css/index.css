@@ -1,4 +1,4 @@
-/*
+/* 
 Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
 Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
 */
@@ -7,3 +7,14 @@ Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css
     Author     : redshark
 */
 
+
+/* Styles of navigation links */
+
+h1 {
+    
+background: var(--Title-Gradient, linear-gradient(90deg, #2C39F4 0%, #683EFF 68.75%));
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+
+}
