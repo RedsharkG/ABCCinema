@@ -18,3 +18,37 @@ background-clip: text;
 -webkit-text-fill-color: transparent;
 
 }
+
+
+
+.landing-section-1 {
+gap: 150px !important;
+}
+
+.landing-details-container {
+    width: 581px !important;
+}
+
+/*.text-p {
+    width:646px !important;
+}*/
+
+
+.landing-section1-image {
+    width: 581px !important;
+    height: auto;
+
+}
+
+/*.landing-section-one-img-container {
+    width: 646px !important;
+}*/
+
+
+
+
+
+.landing-sec-main {
+margin: 0 !important;
+padding:0 !important;
+}
