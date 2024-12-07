@@ -1,9 +1,24 @@
-/*
-Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
-Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
-*/
-/* 
-    Created on : Dec 7, 2024, 10:42:04 PM
-    Author     : thenu
-*/
 
+.textGradient {
+    background: linear-gradient(315deg,#683EF0,#2C39F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+.gradient-background {
+    background: linear-gradient(0deg,#683EF0,#2C39F4)!important;
+    color: #fff;
+}
+
+.font-small {
+    font-size: 13px !important;
+
+}
+
+.customimgMD {
+    width: 813.828px !important;
+    height: auto;
+
+}
