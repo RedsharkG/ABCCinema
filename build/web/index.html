@@ -146,46 +146,44 @@
             margin-top: 3rem;
         }
         
-        .features-title-container {
+  
+        .features-grid {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: 656px 656px;
+        }
+        
+        .right-side {
+            justify-self: end;
+        }
+        
+        .left-side {
+            justify-self: start;
+        }
+        
+        
+        .section-one-image {
+            width: 548px;
+            justify-self: end;
+        }
+
+        
+        .featuresTitle {
             background: var(--Title-Gradient, linear-gradient(90deg, #2C39F4 0%, #683EFF 68.75%));
             background-clip: text;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
-            display: flex;
-            flex-direction: row;
-            align-content: center;
-            justify-content: center;
-            
-            font-size: 28px;
-            
-        }  
-        
-        .right-side {
-            grid-row: 2/3;
-            grid-column: 2/-2;
-        }
-        
-        .features-grid {
-            display: grid;
-            grid-template-rows: repeat(1, 1fr);
-            grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
-            gap: 20px 0px;
-            justify-items: center;
-        }
-        
-        .section-one-image {
-            width: 548px;
-        }
+           font-size: 48px;
+           text-align: center;
 
+            
+        }
+        
+        
         @media (max-width: 768px) {
-           
-            .features-title-container {
-                font-size: 18px;
-                align-self: center;
-                justify-self: center;
-                text-align: center;
-            }
+
             
             .section-one-image{
                 width:200px;
@@ -239,13 +237,7 @@
         }
 
         @media (min-width: 1440px) {
-            
-            .features-title-container {
-                font-size: 24px;
-                text-align: center;
-
-            }
-            
+         
             
             .nav-container {
                 padding: 0 2rem;
@@ -322,17 +314,18 @@
         
         <!-- Features -->
         
-        <div class="features-title-container">
-            
-            <h1 class="featuresTitle">Effortless Ticket Booking at Your Fingertips </h1>
-            
-        </div>
+       
             
             <div class="features-grid">
                 
                 <!-- Left side of the section one -->
                 
                 <div class="left-side">
+                    
+                    <h1 class="featuresTitle"> Effortless Ticket Booking at Your Fingertips </h1>
+                    
+            
+           
                     
                     
                 </div>
@@ -342,11 +335,7 @@
                 <div class="right-side">
                     
                     
-                    <img src="images/landingSection1Img.jpeg" alt="popcorn" class="section-one-image">
-                
-                
-                
-                
+                    <img src="images/landingSection1Img.jpeg" alt="popcorn" class="section-one-image">  
             </div>
             
             

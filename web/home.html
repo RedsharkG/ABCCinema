@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-
-<html>
-    <head>
-        <title>Home</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="css/home.css" rel="stylesheet"/>
-        <style>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cinema Booking</title>
+    <style>
         :root {
             --primary-gradient: linear-gradient(90deg, #2c39f4 0%, #683eff 68.75%);
             --text-white: #ffffff;
@@ -21,7 +19,6 @@
 
         body {
             font-family: 'Roboto', sans-serif;
-            color: #fff;
             line-height: 1.5;
             background-color: var(--bg-dark);
             min-height: 100vh;
@@ -76,7 +73,7 @@
 
         .btn {
             padding: 0.75rem 1.5rem;
-            border-radius: 4px !important;
+            border-radius: 4px;
             border: none;
             cursor: pointer;
             font-size: 1rem;
@@ -92,6 +89,16 @@
             background-color: #f0f0f0;
         }
 
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text-white);
+            border: 1px solid var(--text-white);
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
         .mobile-menu-btn {
             display: none;
             background: none;
@@ -101,7 +108,20 @@
             cursor: pointer;
         }
 
+        .nav-container {
+            max-width: 1440px;
+            margin: 0 auto;
+            padding: 0 1rem;
+            width: 100%;
+        }
+
         @media (max-width: 768px) {
+
+            
+            .section-one-image{
+                width:200px;
+            }
+            
             .nav-links {
                 display: none;
             }
@@ -139,7 +159,7 @@
             }
         }
 
-        @media (min-width: 1440px) {
+        @media (min-width: 1440px) {    
             .nav-container {
                 padding: 0 2rem;
             }
@@ -162,7 +182,7 @@
     </style>
 </head>
 <body>
-
+    <a href="#main-content" class="nav-skip-link">Skip to main content</a>
     
     <header class="navbar" role="banner">
         <div class="nav-container nav-content">
@@ -180,42 +200,24 @@
                 <span aria-hidden="true">☰</span>
             </button>
         </div>
-        
-        <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
-        <nav class="nav-links">
-            <a href="home.html">Home</a>
-            <a href="movieDetails.html">Movies</a>
-            <a href="booking.html">My Bookings</a>
+
+
+    </header>
+
+    <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
+ 
+     <nav class="nav-links" role="navigation">
+            <a href="home.html" aria-current="page">Home</a>
+            <a href="">Movies</a>
+            <a href="#">My Bookings</a>
             <a href="#">Feedbacks</a>
             <button class="btn btn-primary">Login</button>
         </nav>
     </div>
-    </header>
-
-    
-    
-<!--    section 01-->
-
-                <div class="container1">
-                    <div class="item ieam1">1</div>
-                    <div class="item ieam2">2</div>
-                    <div class="item ieam3">3</div>
-                    <div class="item ieam4">4</div>
-                    <div class="item ieam5">5</div>
 
 
-                </div>
-    
-    
-
-    
-            
-            
-            
-       
- 
-
-     <script>
+   
+    <script>
         const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
         const mobileMenu = document.querySelector('.mobile-menu');
 
@@ -224,7 +226,6 @@
             mobileMenuBtn.setAttribute('aria-expanded', !isExpanded);
             mobileMenu.classList.toggle('active');
         });
-
         document.addEventListener('keydown', (e) => {
             if (e.key === 'Escape' && mobileMenu.classList.contains('active')) {
                 mobileMenu.classList.remove('active');
@@ -233,5 +234,5 @@
         });
     </script>
 
-    </body>
+</body>
 </html>
