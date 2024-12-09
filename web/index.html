@@ -26,7 +26,7 @@
             flex-direction: column;
         }
 
-        .container {
+        .nav-container {
             max-width: 1440px;
             margin: 0 auto;
             padding: 0 1rem;
@@ -145,40 +145,52 @@
             height: auto;
             margin-top: 3rem;
         }
-
-        .features-section {
-            padding: 4rem 0;
+        
+        .features-title-container {
+            background: var(--Title-Gradient, linear-gradient(90deg, #2C39F4 0%, #683EFF 68.75%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: center;
+            
+            font-size: 28px;
+            
+        }  
+        
+        .right-side {
+            grid-row: 2/3;
+            grid-column: 2/-2;
         }
-
+        
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(768px, 1fr));
+            gap: 20px 0px;
+            justify-items: center;
         }
-
-        .feature-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 2rem;
-            border-radius: 8px;
-            color: var(--text-white);
-        }
-
-        .feature-icon {
-            width: 48px;
-            height: 48px;
-            margin-bottom: 1rem;
-        }
-
-        .feature-title {
-            font-size: 1.25rem;
-            margin-bottom: 1rem;
-            background: var(--primary-gradient);
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
+        
+        .section-one-image {
+            width: 548px;
         }
 
         @media (max-width: 768px) {
+           
+            .features-title-container {
+                font-size: 18px;
+                align-self: center;
+                justify-self: center;
+                text-align: center;
+            }
+            
+            .section-one-image{
+                width:200px;
+            }
+            
             .nav-links {
                 display: none;
             }
@@ -227,7 +239,15 @@
         }
 
         @media (min-width: 1440px) {
-            .container {
+            
+            .features-title-container {
+                font-size: 24px;
+                text-align: center;
+
+            }
+            
+            
+            .nav-container {
                 padding: 0 2rem;
             }
 
@@ -235,12 +255,9 @@
                 font-size: 4rem;
             }
 
-            .features-grid {
-                grid-template-columns: repeat(3, 1fr);
-            }
         }
 
-        .skip-link {
+        .nav-skip-link {
             position: absolute;
             top: -40px;
             left: 0;
@@ -251,23 +268,23 @@
             transition: top 0.3s ease;
         }
 
-        .skip-link:focus {
+        .nav-skip-link:focus {
             top: 0;
         }
     </style>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#main-content" class="nav-skip-link">Skip to main content</a>
     
     <header class="navbar" role="banner">
-        <div class="container nav-content">
+        <div class="nav-container nav-content">
             <div class="logo">
                 <img src="logo.png" alt="Cinema Booking Logo">
             </div>
             <nav class="nav-links" role="navigation">
-                <a href="#" aria-current="page">Home</a>
-                <a href="#">Movies</a>
-                <a href="#">My Bookings</a>
+                <a href="home.html" aria-current="page">Home</a>
+                <a href="movieDetails.html">Movies</a>
+                <a href="booking.html">My Bookings</a>
                 <a href="#">Feedbacks</a>
                 <button class="btn btn-primary">Login</button>
             </nav>
@@ -280,8 +297,8 @@
     <div class="mobile-menu" role="dialog" aria-modal="true" aria-label="Navigation menu">
         <nav class="nav-links">
             <a href="home.html">Home</a>
-            <a href="#">Movies</a>
-            <a href="#">My Bookings</a>
+            <a href="movieDetails.html">Movies</a>
+            <a href="booking.html">My Bookings</a>
             <a href="#">Feedbacks</a>
             <button class="btn btn-primary">Login</button>
         </nav>
@@ -290,8 +307,8 @@
     <main id="main-content" role="main">
         <section class="hero-section">
             <div class="container">
-                <div class="hero-content">
-                    <h1 class="hero-title">Book Your Cinema Tickets Effortlessly Online</h1>
+                <div class="hero-content"> 
+                   <h1 class="hero-title">Book Your Cinema Tickets Effortlessly Online</h1>
                     <p class="hero-description">Welcome to our online ticket booking platform, where your cinematic experience begins with just a few clicks. Explore recent and trending movies, reserve your seats, and enjoy a seamless booking experience.</p>
                     <div class="hero-buttons">
                         <button class="btn btn-primary">Login</button>
@@ -302,27 +319,39 @@
             </div>
         </section>
 
-        <section class="features-section">
-            <div class="container">
-                <div class="features-grid">
-                    <div class="feature-card">
-                        <img src="feature-icon-1.png" alt="" class="feature-icon" aria-hidden="true">
-                        <h2 class="feature-title">Quick Booking</h2>
-                        <p>Book your tickets anytime, anywhere with just a click.</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="feature-icon-2.png" alt="" class="feature-icon" aria-hidden="true">
-                        <h2 class="feature-title">Seat Selection</h2>
-                        <p>Select your seats for the best viewing experience.</p>
-                    </div>
-                    <div class="feature-card">
-                        <img src="feature-icon-3.png" alt="" class="feature-icon" aria-hidden="true">
-                        <h2 class="feature-title">User Friendly</h2>
-                        <p>Enjoy seamless booking with our user-friendly interface.</p>
-                    </div>
+        
+        <!-- Features -->
+        
+        <div class="features-title-container">
+            
+            <h1 class="featuresTitle">Effortless Ticket Booking at Your Fingertips </h1>
+            
+        </div>
+            
+            <div class="features-grid">
+                
+                <!-- Left side of the section one -->
+                
+                <div class="left-side">
+                    
+                    
                 </div>
+                
+                <!-- Right side of the section one -->
+                
+                <div class="right-side">
+                    
+                    
+                    <img src="images/landingSection1Img.jpeg" alt="popcorn" class="section-one-image">
+                
+                
+                
+                
             </div>
-        </section>
+            
+            
+            
+       
     </main>
 
     <script>
