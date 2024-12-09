@@ -10,6 +10,12 @@
             --text-white: #ffffff;
             --bg-dark: #000000;
         }
+        
+        @font-face {
+            font-family: LogoTitle;
+            src: url(fonts/AntonSC-Regular.ttf);
+        }
+
 
         * {
             margin: 0;
@@ -27,7 +33,7 @@
         }
 
         .nav-container {
-            max-width: 1440px;
+            max-width: 1376px;
             margin: 0 auto;
             padding: 0 1rem;
             width: 100%;
@@ -48,9 +54,13 @@
             align-items: center;
         }
 
-        .logo img {
+        .logo p {
             height: 40px;
             width: auto;
+            color: #fff;
+            font-family:LogoTitle; 
+            font-size: 24px;
+            font-weight:bolder;
         }
 
         .nav-links {
@@ -164,8 +174,10 @@
         
         
         .section-one-image {
-            width: 548px;
+            width: 100%;
             justify-self: end;
+            padding-left: 110px;
+            
         }
 
         
@@ -199,13 +211,97 @@
             width: 24px;
             height: 24px;
         }
-        @media (max-width: 768px) {
+        
+        .left-list-flex1 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+        }
+        
+        .left-list-flex2 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
 
+        }
+        
+        .left-list-flex3 {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 20px;
+            margin-bottom: 30px;
+
+        }
+        
+        .left-button-flex {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .left-side-button1 {
+            padding: 12px 24px;
+            font-size: 14px;
+            color: #000;
+            background-color: #fff;
+            border: 0;
+            font-weight: normal;
+        }
+        
+        .left-side-button-2 {
+            padding: 12px 24px;
+            align-self: center;
+            font-size: 14px;
+            color: #fff;
+            background-color: #000; 
+            border: 0;
+            font-weight: normal;
+        }
+        
+        .left-side-button1:hover {
+            color: #fff;
+            background-color:#000;
+            cursor:pointer;
+            border: #fff solid 2px;
+        }
+        
+        .left-side-button-2:hover {
+            background-color: #fff;
+            color: #000;
+            cursor: pointer;
+        }
+        
+
+        
+        @media (max-width: 768px) {
             
-            .section-one-image{
-                width:200px;
+            body {
+                padding-left:10px;
+                padding-right:10px;
+            }
+
+            .features-grid {
+                grid-template-rows: repeat(2, 1fr);
+                grid-template-columns: 1fr;
             }
             
+            .section-one-image{
+                width:20%
+                justify-self: center;
+                padding-left:0;
+            }
+            
+            .left-button-flex {
+                justify-content: center;
+            }
+            
+            .left-side-list {
+                line-height:30px;
+            }
+            
+           
             .nav-links {
                 display: none;
             }
@@ -256,6 +352,7 @@
         @media (min-width: 1440px) {
          
             
+            
             .nav-container {
                 padding: 0 2rem;
             }
@@ -288,7 +385,7 @@
     <header class="navbar" role="banner">
         <div class="nav-container nav-content">
             <div class="logo">
-                <img src="logo.png" alt="Cinema Booking Logo">
+                    <p> ABC CINEMA </p>
             </div>
             <nav class="nav-links" role="navigation">
                 <a href="home.html" aria-current="page">Home</a>
@@ -349,25 +446,26 @@
                     <ul class="left-side-list">
                         
                         <li class="item-1">
-                            <p> 
+                            
+                            <div class="left-list-flex1">
+                             
                                 <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none" class="left-side-svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.32 4.74667L14.2267 4.58C14.1063 4.37846 13.9365 4.21096 13.7333 4.09334L9.26 1.51334C9.05746 1.39584 8.82753 
                                               1.33375 8.59333 1.33334H8.4C8.1658 1.33375 7.93586 1.39584 7.73333 1.51334L3.26 4.1C3.05798 4.21684 2.89017 4.38465 2.77333 4.58667L2.68 4.75334C2.5625 4.9559 2.50041 5.18583 2.5 5.42V10.5867C2.50041 
                                               10.8209 2.5625 11.0508 2.68 11.2533L2.77333 11.42C2.89319 11.6197 3.06033 11.7868 3.26 11.9067L7.74 14.4867C7.94153 14.6066 8.17213 14.6689 8.40666 14.6667H8.59333C8.82753 14.6663 9.05746 14.6042 9.26 14.4867L13.7333 
                                               11.9C13.9373 11.7858 14.1058 11.6173 14.22 11.4133L14.32 11.2467C14.4361 11.0435 14.4981 10.814 14.5 10.58V5.41334C14.4996 5.17916 14.4375 4.94923 14.32 4.74667ZM8.4 2.66667H8.59333L12.5
                                               4.92L8.5 7.22667L4.5 4.92L8.4 2.66667ZM9.16666 13L13.0667 10.7467L13.1667 10.58V6.07333L9.16666 8.38667V13Z" fill="white"/>
-                                      </svg>
+                                </svg>
                                       
-                                                                      &nbsp;
-
-                                
-                                Book your tickets anytime, anywhere with just a click. 
-                            
-                            </p>
+                                <p> Book your tickets anytime, anywhere with just a click. </p>
+                            </div>
                         </li>
            
                          <li class="item-2">
-                            <p> 
+                             
+                                     <div class="left-list-flex2">
+
+                            
                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none" class="left-side-svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.32 4.74667L14.2267 4.58C14.1063 4.37846 13.9365 4.21096 13.7333 4.09334L9.26 1.51334C9.05746 1.39584 8.82753 
                                               1.33375 8.59333 1.33334H8.4C8.1658 1.33375 7.93586 1.39584 7.73333 1.51334L3.26 4.1C3.05798 4.21684 2.89017 4.38465 2.77333 4.58667L2.68 4.75334C2.5625 4.9559 2.50041 5.18583 2.5 5.42V10.5867C2.50041 
@@ -375,16 +473,18 @@
                                               11.9C13.9373 11.7858 14.1058 11.6173 14.22 11.4133L14.32 11.2467C14.4361 11.0435 14.4981 10.814 14.5 10.58V5.41334C14.4996 5.17916 14.4375 4.94923 14.32 4.74667ZM8.4 2.66667H8.59333L12.5
                                               4.92L8.5 7.22667L4.5 4.92L8.4 2.66667ZM9.16666 13L13.0667 10.7467L13.1667 10.58V6.07333L9.16666 8.38667V13Z" fill="white"/>
                                       </svg>
-                                                                      &nbsp;
 
-                               
+                                                                      <p>
                                 Book your tickets anytime, anywhere with just a click. 
                             
                             </p>
+                                                         </div>
                         </li>
                         
-                        <li>
-                            <p class="item-3">
+                        <li class="item-3">
+                            
+                            <div class="left-list-flex3">
+
                                 
                                  <svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" viewBox="0 0 17 16" fill="none" class="left-side-svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M14.32 4.74667L14.2267 4.58C14.1063 4.37846 13.9365 4.21096 13.7333 4.09334L9.26 1.51334C9.05746 1.39584 8.82753 
@@ -392,16 +492,24 @@
                                               10.8209 2.5625 11.0508 2.68 11.2533L2.77333 11.42C2.89319 11.6197 3.06033 11.7868 3.26 11.9067L7.74 14.4867C7.94153 14.6066 8.17213 14.6689 8.40666 14.6667H8.59333C8.82753 14.6663 9.05746 14.6042 9.26 14.4867L13.7333 
                                               11.9C13.9373 11.7858 14.1058 11.6173 14.22 11.4133L14.32 11.2467C14.4361 11.0435 14.4981 10.814 14.5 10.58V5.41334C14.4996 5.17916 14.4375 4.94923 14.32 4.74667ZM8.4 2.66667H8.59333L12.5
                                               4.92L8.5 7.22667L4.5 4.92L8.4 2.66667ZM9.16666 13L13.0667 10.7467L13.1667 10.58V6.07333L9.16666 8.38667V13Z" fill="white"/>
-                                      </svg>
+                                 </svg>
                                       
-                                                                      &nbsp;
 
-                                
-                                Book your tickets anytime, anywhere with just a click. 
-                            
-                            </p>
+                             <p> Book your tickets anytime, anywhere with just a click.  </p>
+                             
+                            </div>
                         </li>
-           
+                        
+                        <div class="left-button-flex">
+                            
+                            <button class="left-side-button1"> Learn More </button>
+                            <button class="left-side-button-2"> Sign Up
+                        
+                            </button>
+                            
+                                              
+                            
+                        </div>
                     
                 </div>
                 
