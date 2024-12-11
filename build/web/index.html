@@ -162,6 +162,8 @@
             justify-content: center;
             grid-template-rows: repeat(1, 1fr);
             grid-template-columns: 656px 656px;
+            gap: 80px 0px;
+            margin-bottom: 80px;
         }
         
         .right-side {
@@ -187,9 +189,9 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             
-           font-size: 48px;
+           font-size: 40px;
            text-align: center;
-           margin-bottom: 30px; 
+           margin-bottom: 50px; 
         }
         
         .right-side-description {
@@ -273,7 +275,95 @@
             cursor: pointer;
         }
         
+        /* Section two styles */
+        
+        .landing-s2-grid {
+            display: grid;
+            justify-content: center;
+            grid-template-rows: repeat(1, 1fr);
+            grid-template-columns: 656px 656px
+            
+        }
+        
+        .left-side-s2 {
+            
+           justify-content:start;
+            
+        }
+        
+        .left-s2-header {
+            background: var(--Title-Gradient, linear-gradient(90deg, #2C39F4 0%, #683EFF 68.75%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            
+            justify-self: start;
+            font-size: 40px;
+            text-align:start;
+        }
+        
+        .right-side-s2 {
+            
+        }
+        
+        .right-s2-description {
+            color: #fff;
+            text-align:stretch;
+            margin-left: 100px;
+            margin-bottom: 40px;
+        }
 
+        .right-points-flex {
+            display: flex;
+            flex-direction: row;
+            margin-left: 100px;
+            gap: 20px;
+            
+        }
+        
+        .right-points-flex1 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            
+        }
+        
+        .right-points-flex2 {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+       
+        }
+        
+        .right-point-title {
+            color: #fff;
+        }
+        
+        .right-points-description {
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        .right-points-title2 {
+            color: #fff;
+        }
+        
+        .right-points-description2 {
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        .right-points-svg {
+            width: 36px;
+            height: 36px;
+        }
+        
+        .landing-video-flex {
+            display: flex;
+            justify-content: center;
+        }
+        
+       
         
         @media (max-width: 768px) {
             
@@ -285,6 +375,7 @@
             .features-grid {
                 grid-template-rows: repeat(2, 1fr);
                 grid-template-columns: 1fr;
+                margin-bottom: 2px;
             }
             
             .section-one-image{
@@ -301,6 +392,50 @@
                 line-height:30px;
             }
             
+            .landing-s2-grid {
+                padding-left: 10px;
+                padding-right: 10px;
+                grid-template-rows: 2fr 3fr 3fr;
+                grid-template-columns: 1fr; 
+            }
+           
+            .left-s2-header {
+                
+                
+                text-align: center;
+                
+            }
+            
+            .right-points-flex {
+                margin-left:0px;
+            }
+            
+            .right-s2-description {
+                margin-left: 0px;
+                text-align: center;
+            }
+            
+            .landing-video-flex {
+                display: none;
+                 position: relative;
+                 width: 100%;
+                 padding-bottom: 56.25%; /* 16:9 aspect ratio */
+                 height: 0;
+                 overflow: hidden;
+            }
+            
+            .landing-video {
+
+                 display:none;
+                 position: absolute;
+                 top: 0;
+                 left: 0;
+                 width: 100%;
+                 height: 100%;
+
+            }
+            
+
            
             .nav-links {
                 display: none;
@@ -308,6 +443,7 @@
 
             .mobile-menu-btn {
                 display: block;
+                margin-right: 10px;
             }
 
             .mobile-menu {
@@ -392,7 +528,7 @@
                 <a href="movieDetails.html">Movies</a>
                 <a href="booking.html">My Bookings</a>
                 <a href="#">Feedback</a>
-                <button class="btn btn-primary">Login</button>
+                <button onclick="location.href='login.html'" class="btn btn-primary">Login</button>
             </nav>
             <button class="mobile-menu-btn" aria-label="Toggle navigation menu" aria-expanded="false">
                 <span aria-hidden="true">☰</span>
@@ -406,7 +542,7 @@
             <a href="movieDetails.html">Movies</a>
             <a href="booking.html">My Bookings</a>
             <a href="#">Feedbacks</a>
-            <button class="btn btn-primary">Login</button>
+            <button class="btn btn-primary" onclick="location.href='login.html'">Login</button>
         </nav>
     </div>
 
@@ -519,9 +655,92 @@
                 <div class="right-side">
                     
                     <img src="images/landingSection1Img.jpeg" alt="popcorn" class="section-one-image">  
-                    
-                    
+                        
             </div>
+                </div>   
+                <!-- Section 02 -->
+                
+                <div class="landing-s2-grid">
+                    
+                     <div class="left-side-s2">
+                        
+                        <h1 class="left-s2-header"> Experience the Simplicity of SMS Alert Service : Never Miss the Show </h1>
+                        
+                        
+                        
+                    </div>
+                    
+                    
+                    <div class="right-side-s2">
+                        
+                        <p class="right-s2-description">
+                            Join our community of movie lovers and enjoy exclusive previews, discounts,<br> and 
+                            loyalty rewards. Experience cinema like never before with our user-<br>friendly platform. 
+                            SMS Service informs about your booked shows, purchased <br>details, Movie starting times and 
+                            everything. You will never miss the show!
+                        </p>
+                
+                    <div class="right-points-flex">        
+                        
+                        <div class="right-points-flex1">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none" class="right-points-svg">
+                                <path d="M24.5 44C35.5457 44 44.5 35.0457 44.5 24C44.5 12.9543 35.5457 4 24.5 4C13.4543 4 4.5 12.9543 4.5 24C4.5 35.0457 13.4543 44 24.5 44Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24.5 16V24" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M24.5 32H24.52" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                              </svg>
+                                <p class="right-point-title">
+
+                                    Show Time Alert
+                                </p>
+                                
+                                <p class="right-points-description">
+                                    
+                                    You’ll never miss a show! We are here to <br> remind you about the time and every<br>
+                                    details via SMS to your phone.
+                                          
+                                </p>
+
+                            
+                            
+                        </div>
+                        
+                        <div class="right-points-flex2">
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="49" height="48" viewBox="0 0 49 48" fill="none" class="right-points-svg">
+                            <path d="M42.5 8H6.5C4.29086 8 2.5 9.79086 2.5 12V36C2.5 38.2091 4.29086 40 6.5 40H42.5C44.7091 40 46.5 38.2091 46.5 36V12C46.5 9.79086 44.7091 8 42.5 8Z" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M2.5 20H46.5" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                          </svg>
+
+                          <p class="right-points-title2">
+                              Payment Details
+                          </p>
+                            
+                          <p class="right-points-description2">
+                              You don’t have to wait a decade until your <br> e-mail confirmation. No delay with instant<br> SMS payment receipts.
+                              
+                          </p>
+                            
+                            
+                        </div>
+                        
+                        
+                    </div>   
+                        
+                    </div>
+                </div>  
+                
+                
+                <div class="landing-video-flex">
+                   
+                  <video autoplay loop muted width="1312" height="800" class="landing-video">
+                    <source src="videos/landingVideo.mp4" type="video/mp4">
+                  </video>
+  
+                </div>
+                    
+                    
+          
             
             
        

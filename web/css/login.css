@@ -1,0 +1,129 @@
+:root {
+            --primary-gradient: linear-gradient(90deg, #2c39f4 0%, #683eff 68.75%);
+            --text-white: #ffffff;
+            --bg-dark: #000000;
+        }
+        
+        @font-face {
+            font-family: LogoTitle;
+            src: url(../fonts/AntonSC-Regular.ttf);
+        }
+
+        html {
+            background-color: var(--bg-dark);
+            color: var(--text-white);
+
+
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: roboto,sans-serif;
+        }
+        
+
+
+        .login-title-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-content: center;
+            margin-top: 12%;
+            margin-bottom: 2%;
+        }
+        
+        .login-title {
+            color: #fff;
+            font-size: 40px;  
+        }
+        
+        .login-data-container {
+            display: flex;
+            justify-content:center;
+        }
+        
+        
+        .login-form {
+           display:flex;
+           flex-direction: column;
+           width: 600px;
+           height: 400px;
+           padding-top: 20px;
+           padding-bottom: 20px;
+           padding-right: 40px;
+           padding-left: 40px;
+           border-radius: 66px;
+           align-content: center;
+           justify-content: center;
+           background: var(--Title-Gradient, linear-gradient(90deg, #2C39F4 0%, #683EFF 68.75%));
+        }
+
+        
+
+        #phoneNumber-text {
+            font-size: 18px;
+            text-align: center;
+        }
+        
+        #password-Text {
+            font-size: 18px;
+            text-align: center;
+        }
+
+        #login-button {
+            font-size: 18px;
+            background-color: #fff;
+            width: 110px;
+            height: 45px;
+            border-radius: 10px;
+            border: 0;
+            margin-left: 200px;
+              
+        }
+        
+        #login-button:hover {
+
+            background-color: #000;
+            color: #fff;
+            
+        }
+        
+        #phoneNumber {
+            
+            width: 60%;
+            height: 10%;
+            margin-left: 107px;
+            border-radius:10px;
+            border:0px;
+
+           
+            
+        }
+        
+        #password {
+            width: 60%;
+            height: 10%;
+            margin-left:107px;
+            border-radius:10px;
+            border:0px;
+            margin-bottom: 20px;
+        }
+
+        a:link {
+           color: #fff;
+        }
+        
+        a:hover {
+            font-weight: bold;
+        }
+        
+        .signUp-text {
+            text-align: center;
+        }
+        
+        .forgot-password {
+            text-align: center;
+          
+        }
