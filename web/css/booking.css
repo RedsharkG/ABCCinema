@@ -1,0 +1,49 @@
+@font-face {
+    font-family: LogoTitle;
+    src: url('../fonts/AntonSC-Regular.ttf')format('truetype');
+ }
+ .logo p {
+    height: 40px;
+    width: auto;
+    color: #fff;
+    font-family:LogoTitle !important; 
+    font-size: 24px;
+    font-weight:bolder;
+}
+
+.navbar {
+    background-color: #000;
+}
+.gradient-text {
+    background: linear-gradient(315deg,#683EF0,#2C39F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.my-section {
+    background-image: url('../images/landingCoverImg.png'); /* Ensure the correct path */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5)!important;
+    background-size: cover; /* Ensures the image covers the container */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center; /* Centers the image */
+    height: 400px; /* Adjust the height */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    color: white; /* Makes text readable on dark images */
+    text-align: center; /* Centers text */
+}
+
+.shadow-overlay {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Adds shadow */
+    padding: 20px; /* Ensures padding inside the shadowed area */
+    color: white; /* White text for contrast */
+}
+
+.rectangle {
+  height: 10px !important;
+  width: 500px !important;
+  background-color: #fff !important;
+}
