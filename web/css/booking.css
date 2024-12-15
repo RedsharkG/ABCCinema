@@ -42,8 +42,26 @@
     color: white; /* White text for contrast */
 }
 
+
 .rectangle {
-  height: 10px !important;
-  width: 500px !important;
-  background-color: #fff !important;
+  height: 25px;
+  width: 100%; /* Make the width relative to the container */
+  max-width: 800px; /* Ensure it doesn't exceed 800px on larger screens */
+  background-color: #fff;
 }
+
+@media (max-width: 576px) {
+  .rectangle {
+    width: 70%; /* Adjust width for smaller screens */
+  }
+  .rowsvg{
+      --bs-gutter-x:0.6rem !important; 
+  }
+  .svgs{
+      width: 18px;
+      height: 20px; 
+  }
+}
+
+
+
