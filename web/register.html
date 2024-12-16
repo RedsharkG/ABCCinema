@@ -4,12 +4,275 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
-    <link href="css/register.css" rel="stylesheet">
+    
+    
+    
+    
+    <style>
+        
+        :root {
+  --primary-gradient: linear-gradient(90deg, #2c39f4 0%, #683eff 68.75%);
+  --text-white: #ffffff;
+  --bg-dark: #000000;
+}
+
+@font-face {
+  font-family: LogoTitle;
+  src: url(../fonts/AntonSC-Regular.ttf);
+}
+
+html {
+  background-color: var(--bg-dark);
+  color: var(--text-white);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: roboto,sans-serif;
+}
+
+.title-container-flex {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  margin-top: 6%;
+  margin-bottom: 4%;
+}
+
+.title {
+  font-size: 48px;
+  color: #fff;
+  font-weight: bold;
+}
+
+#form-ID {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+ 
+
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content:center;
+  background: var(--Title-Gradient, linear-gradient(90deg, #2C39F4 0%, #683EFF 68.75%));
+  box-shadow: 0px 0px 20px 10px #2C39F4;
+  border-radius: 20px;
+  width: 800px;
+  height:600px;
+}
+
+.individual-Flex {
+  display: flex;
+  flex-direction: row;
+  gap:20%;
+  margin-left: 10%;
+  margin-bottom: 20px;
+}
+
+.gender-Radio-Flex {
+  display:flex;
+  flex-direction: row;
+  gap:10%;
+  margin-left:10%;
+}
+
+.gri-Flex {
+  display: flex;
+  flex-direction: row;
+  gap:12%;
+  margin-left: 150px;
+  margin-bottom: 20px;
+  align-self:center;
+}
+
+.label {
+  font-size: 22px;
+}
+
+.inputBox {
+  border-radius: 5px;
+  width: 370px;
+  border:0px;
+  padding:10px;
+}
+
+.button-Flex {
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20%;
+}
+
+.button {
+  padding: 15px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 0;
+  border-radius: 10px;
+  margin-top: 30px;
+  background-color: #fff;
+}
+
+.register-button:hover {
+  border: 4px solid #CD9900 ;
+  color: #000;
+}
+
+.clear-button:hover {
+  border: 4px solid #000 ;
+  color: #000;
+}
+
+@media (max-width: 768px) {
+
+.form-content {
+  width: 400px;
+  padding:10px;
+}
+
+.individual-Flex {
+  margin-left: 3cqi;
+}
+
+.gri-Flex {
+  margin-left: 0px;
+}
+
+.button {
+  color: #000;
+  margin-bottom: 3%;
+}
+
+.register-button:hover {
+  border: 4px solid #CD9900 ;
+  color: #000;
+}
+
+.clear-button:hover {
+  border: 4px solid #000 ;
+  color: #000;
+}
+
+}
+        
+        
+    </style>
 </head>
 
 <body>
     
+    <div class="title-container-flex">
+        
+        <p class="title"> REGISTER </p>
+        
+    </div>
     
+    <!-- Form content -->
+
+    <div id="form-ID">
+
+    <div class="form-content">
+
+
+      <form action="#" class="register-form">
+
+        <!-- Name Input -->
+
+        <div class="name-Flex individual-Flex">
+
+        <label for="name" id="name-label" class="label"> Name </label> 
+        <input type="text" id="name" name="name" class="inputBox"> 
+
+        </div>
+
+        <br>
+
+        <!-- Email Input -->
+
+        <div class="email-Flex individual-Flex">
+
+        <label for="email" id="email-label" class="label"> E-mail </label>
+        <input type="email" id="email" name="email" class="inputBox">
+
+        </div>
+
+        <br>
+
+        <!-- NIC Number Input -->
+
+        <div class="nic-Number-Input individual-Flex">
+
+        <label for="nic" id="nicNumber-label" class="label"> NIC Number </label>
+        <input type="text" id="nic" name="nic" class="inputBox">
+
+        </div>
+        
+        <br>
+
+        <!-- Phone Number Input -->
+
+        <div class="phoneNumber-Flex individual-Flex">
+
+        <label for="phoneNumber" id="phoneNumber-label" class="label"> Phone Number </label>
+        <input type="text" id="phoneNumber" name="phoneNumber" class="inputBox">
+      
+      </div>
+
+      <br>
+        <!-- Gender Radio Button Input -->
+
+        <div class="gender-Radio-Flex">
+
+        <label for="genderRadioButton" id="gender-radio-Button" class="label"> Gender </label>
+
+        <div class="gri-Flex"> <!-- gri = Gender Radio Individual -->
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male"> Male </label>
+        
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female"> Female </label>
+        </div>
+
+       </div>
+
+        <br>
+
+        <!-- Password Input -->
+
+        <div class="password-Flex individual-Flex">
+
+        <label for="password" id="password-label" class="label"> Password </label>
+        <input type="password" id="password" name="password" class="inputBox">
+
+        </div>
+
+      <br>
+
+      <!-- Submit and Clear Button -->
+
+      <div class="button-Flex">
+
+        <button type="clear" id="clear-button" class="clear-button button">CLEAR</button>
+        <button type="submit" id="submit-button" class="register-button button">REGISTER</button>
+
+      </div>
+
+
+    </form>
+    </div>
+
+    </div>
+
+
+
     
 </body>
 </html>
