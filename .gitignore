@@ -1,2 +1,33 @@
+# NetBeans-specific files
+/nbproject/private/
+/nbproject/backup/
 /build/
 /dist/
+
+# Java build files
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven-specific files
+/target/
+/.mvn/
+
+# Gradle-specific files
+.gradle/
+/build/
+
+# System and temporary files
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
+
+# IntelliJ IDEA
+.idea/
+*.iml
+
+# VSCode
+.vscode/
