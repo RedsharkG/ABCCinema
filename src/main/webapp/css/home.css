@@ -1,0 +1,134 @@
+@font-face {
+    font-family: LogoTitle;
+    src: url('../fonts/AntonSC-Regular.ttf')format('truetype');
+ }
+ .logo p {
+    height: 40px;
+    width: auto;
+    color: #fff;
+    font-family:LogoTitle !important; 
+    font-size: 24px;
+    font-weight:bolder;
+}
+
+.navbar {
+    background-color: #000;
+}
+.gradient-text {
+background: linear-gradient(315deg,#683EF0,#2C39F4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.img01{
+    width: 581px;
+    height: auto;
+    flex-shrink: 0;
+}
+.custom-gap {
+    gap:100px;
+
+}
+
+.leftside {
+    max-width: 500px;
+/*    height: 476px;*/
+}
+
+.btn {
+    border-radius: 0 !important; 
+    padding: 10px 30px;
+    text-decoration: none;
+}
+
+.btn-light {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.btn-dark {
+    background-color: #000 !important;
+    color: #fff;
+    border: 1px solid #fff !important;
+}
+
+.btn-dark:hover{
+    background-color: #fff !important;
+    color:#000 !important;
+    border-color:#000 !important;
+}
+
+.btn-light:hover {
+    background-color: #000 !important;
+    color: #fff !important;
+    border: 1px solid #fff !important;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: white;
+    margin-top: 15px;
+}
+
+
+p {
+    color: white;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+svg {
+    margin-bottom: 10px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.anchor {
+    text-decoration: none !important;
+    color: #fff !important;
+    
+}
+
+.arrow-icon {
+    transition: transform 0.3s ease, z-index 0.3s ease !important;
+    z-index: 1 !important;
+}
+
+.arrow-icon:hover {
+    transform: scale(1.3) !important; /* Enlarges the arrow */
+    z-index: 10 !important; /* Brings it to the front */
+}
+
+
+
+.faqubtn {
+color: #fff !important;
+}
+
+.homePagecustom {
+    font-size: 14px;
+}
+
+.my-section {
+    background-image: url('../images/homeimg04.jpeg'); /* Ensure the correct path */
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.5);
+    background-size: cover; /* Ensures the image covers the container */
+    background-repeat: no-repeat; /* Prevents repeating */
+    background-position: center; /* Centers the image */
+    height: 400px; /* Adjust the height */
+    display: flex; /* Enables flexbox for centering */
+    justify-content: center; /* Centers content horizontally */
+    align-items: center; /* Centers content vertically */
+    color: black; /* Makes text readable on dark images */
+    text-align: center; /* Centers text */
+}
+
+.shadow-overlay {
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent black */
+    border-radius: 8px; /* Optional rounded corners */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.8); /* Adds shadow */
+    padding: 20px; /* Ensures padding inside the shadowed area */
+    color: white; /* White text for contrast */
+}

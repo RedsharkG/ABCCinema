@@ -1,0 +1,8 @@
+target/*
+!target/CinemaBookingAdminPanel.war
+!target/dependency/mysql-connector-java-8.0.33.jar
+.git
+.gitignore
+.env
+*.md
+node_modules/
