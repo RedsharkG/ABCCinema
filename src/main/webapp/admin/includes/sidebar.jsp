@@ -9,23 +9,32 @@
            class="nav-item ${param.page == 'dashboard' ? 'active' : ''}">
             <i class="fas fa-tachometer-alt"></i> Dashboard
         </a>
+<<<<<<< HEAD
         <a href="${pageContext.request.contextPath}/admin/movies" class="nav-item ${param.page == 'movies' ? 'active' : ''}">
             <i class="fas fa-film"></i> Movie Management
         </a>
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
         <a href="${pageContext.request.contextPath}/admin/navigation?page=tickets" 
            class="nav-item ${param.page == 'tickets' ? 'active' : ''}">
             <i class="fas fa-ticket-alt"></i> Ticket Management
         </a>
+<<<<<<< HEAD
         
         
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
         <a href="${pageContext.request.contextPath}/admin/navigation?page=users" 
            class="nav-item ${param.page == 'users' ? 'active' : ''}">
             <i class="fas fa-users"></i> User Management
         </a>
+<<<<<<< HEAD
         <a href="${pageContext.request.contextPath}/admin/feedback" class="nav-item ${param.page == 'feedback' ? 'active' : ''}">
             <i class="fas fa-comments"></i> Feedback Management
         </a>
         
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
         <a href="${pageContext.request.contextPath}/admin/navigation?page=bookings" 
            class="nav-item ${param.page == 'bookings' ? 'active' : ''}">
             <i class="fas fa-book"></i> Booking Management

@@ -21,6 +21,7 @@ public class UserFilter implements Filter {
         boolean isLoginPage = requestURI.endsWith("login.jsp");
         boolean isRegisterPage = requestURI.endsWith("register.jsp");
         boolean isAuthServlet = requestURI.endsWith("/auth");
+<<<<<<< HEAD
         boolean isMoviesPage = requestURI.endsWith("/movies");
         boolean isPaymentPage = requestURI.contains("/payment");
         boolean isBookingsPage = requestURI.endsWith("/bookings");
@@ -35,11 +36,17 @@ public class UserFilter implements Filter {
         if (isHomePage || isLoginPage || isRegisterPage || isAuthServlet || isMoviesPage ||
                 isBookingsPage || isFeedbackPage || isProfilePage ||
                 (session != null && session.getAttribute("user") != null)) {
+=======
+
+        if (isHomePage || isLoginPage || isRegisterPage || isAuthServlet
+                || (session != null && session.getAttribute("user") != null)) {
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
             chain.doFilter(request, response);
         } else {
             httpResponse.sendRedirect(httpRequest.getContextPath() + "/user/login.jsp");
         }
     }
+<<<<<<< HEAD
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -48,4 +55,6 @@ public class UserFilter implements Filter {
     @Override
     public void destroy() {
     }
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 }

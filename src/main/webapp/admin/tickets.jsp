@@ -71,7 +71,11 @@
                                     <td>#${ticket.ticketId}</td>
                                     <td>${ticket.movieTitle}</td>
                                     <td>${ticket.showTime}</td>
+<<<<<<< HEAD
                                     <td>${ticket.price}</td>
+=======
+                                    <td>$${ticket.price}</td>
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
                                     <td>${ticket.quantity}</td>
                                     <td><span class="status ${fn:toLowerCase(ticket.status)}">${ticket.status}</span></td>
                                     <td class="action-buttons">
@@ -96,11 +100,19 @@
                         <form id="addTicketForm" action="${pageContext.request.contextPath}/admin/tickets" method="post">
                             <input type="hidden" name="action" value="add">
                             <div class="form-group">
+<<<<<<< HEAD
                                 <label>Movie:</label>
                                 <select name="movieId" required>
                                     <c:forEach items="${movies}" var="movie">
                                         <option value="${movie.movieId}">
                                             ${movie.title} (${movie.status})
+=======
+                                <label>Show:</label>
+                                <select name="showId" required>
+                                    <c:forEach items="${shows}" var="show">
+                                        <option value="${show.showId}">
+                                            ${show.movieTitle} - ${show.showTime} (${show.theaterName})
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
                                         </option>
                                     </c:forEach>
                                 </select>
@@ -167,6 +179,10 @@
                     </div>
                 </div>
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
                 <!-- Delete Form -->
                 <form id="deleteForm" method="post" style="display: none;">
                     <input type="hidden" name="action" value="delete">

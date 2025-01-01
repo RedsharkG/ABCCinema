@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
@@ -141,5 +142,15 @@
     </div>
 
     <script src="../js/movie-management.js"></script>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Movies</title>
+</head>
+<body>
+    <h1>Manage Movies</h1>
+    <p>Here, you can add, update, and delete movie information.</p>
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 </body>
 </html>

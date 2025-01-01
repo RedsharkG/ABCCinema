@@ -44,6 +44,7 @@
     <dependency>
         <groupId>com.google.code.gson</groupId>
         <artifactId>gson</artifactId>
+<<<<<<< HEAD
         <version>2.10.1</version>
     </dependency>
     <dependency>
@@ -84,16 +85,23 @@
 
 
 
+=======
+        <version>2.8.9</version>
+    </dependency>
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
   </dependencies>
 
   <build>
     <finalName>CinemaBookingAdminPanel</finalName>
+<<<<<<< HEAD
     <resources>
         <resource>
             <directory>src/main/resources</directory>
             <filtering>true</filtering>
         </resource>
     </resources>
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
     <plugins>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -103,6 +111,7 @@
                 <failOnMissingWebXml>false</failOnMissingWebXml>
             </configuration>
         </plugin>
+<<<<<<< HEAD
         <plugin>
             <groupId>com.spotify</groupId>
             <artifactId>dockerfile-maven-plugin</artifactId>
@@ -115,6 +124,20 @@
                 </buildArgs>
             </configuration>
         </plugin>
+=======
+              <plugin>
+          <groupId>com.spotify</groupId>
+          <artifactId>dockerfile-maven-plugin</artifactId>
+          <version>1.4.13</version>
+          <configuration>
+              <repository>${project.artifactId}</repository>
+              <tag>${project.version}</tag>
+              <buildArgs>
+                  <JAR_FILE>target/${project.build.finalName}.war</JAR_FILE>
+              </buildArgs>
+          </configuration>
+      </plugin>
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
     </plugins>
   </build>
 </project>

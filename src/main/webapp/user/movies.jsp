@@ -13,6 +13,7 @@
     
     <style>
         .movie-card {
+<<<<<<< HEAD
     transition: transform 0.3s;
     height: 100%;
 }
@@ -223,5 +224,45 @@
         });
     </script>
     
+=======
+            transition: transform 0.3s;
+            height: 100%;
+        }
+        
+        .movie-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card-img-top {
+            height: 400px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body class="bg-black text-white">
+    <!-- Include the same navbar as home2.jsp -->
+    
+    <div class="container mt-5">
+        <h1 class="gradient-text fw-bolder text-center mb-5">Latest Movies</h1>
+        
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <c:forEach items="${movies}" var="movie">
+                <div class="col">
+                    <div class="card text-bg-dark movie-card">
+                        <img src="${movie.posterUrl}" class="card-img-top" alt="${movie.title}">
+                        <div class="card-body">
+                            <h5 class="card-title">${movie.title}</h5>
+                            <p class="card-text">${fn:substring(movie.description, 0, 100)}...</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                                <span class="badge bg-primary">${movie.status}</span>
+                                <a href="booking?movieId=${movie.movieId}" class="btn btn-primary">Book Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </c:forEach>
+        </div>
+    </div>
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 </body>
 </html>

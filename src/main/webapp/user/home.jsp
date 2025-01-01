@@ -37,6 +37,7 @@
                                             <a class="nav-link active text-white mx-2" aria-current="page" href="#">Home</a>
                                         </li>
                                         <li class="nav-item">
+<<<<<<< HEAD
                                             <a class="nav-link text-white mx-2" href="#" onclick="location.href='${pageContext.request.contextPath}/user/login.jsp'">Movies</a>
                                         </li>
                                         <li class="nav-item">
@@ -44,6 +45,15 @@
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link text-white mx-2" href="#" onclick="location.href='${pageContext.request.contextPath}/user/login.jsp'">Feedback</a>
+=======
+                                            <a class="nav-link text-white mx-2" href="#">Movies</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white mx-2" href="#">My Bookings</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link text-white mx-2" href="#">Feedback</a>
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
                                         </li>
                                     </ul>
                                     <!-- Login button next to the links -->

@@ -40,6 +40,7 @@ public class MovieDAO {
         }
         return movies;
     }
+<<<<<<< HEAD
 
     public void addMovie(Movie movie) {
         String sql = "INSERT INTO movies (title, description, duration, release_date, rating, poster_url, status) " +
@@ -121,4 +122,6 @@ public class MovieDAO {
         }
         return null;
     }
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 }

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # NetBeans-specific files
 /nbproject/private/
 /nbproject/backup/
@@ -6,10 +7,38 @@
 
 # Java build files
 *.class
+=======
+# NetBeans specific files
+nbproject/
+nbbuild/
+dist/
+nbdist/
+build/
+
+# NetBeans specific cache files
+**/nb-configuration.xml
+
+# Maven specific files
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+
+# Compiled Java files
+*.class
+
+# Log files
+*.log
+
+# Package files
+>>>>>>> 8f2ab0a (admin panel and other functions)
 *.jar
 *.war
 *.ear
 
+<<<<<<< HEAD
 # Maven-specific files
 /target/
 /.mvn/
@@ -31,3 +60,66 @@ Thumbs.db
 
 # VSCode
 .vscode/
+=======
+# IntelliJ IDEA specific files (if you switch IDEs)
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+
+# Eclipse specific files (if you switch IDEs)
+*.launch
+.settings/
+.metadata/
+.classpath
+.project
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Other IDE-specific files
+.vscode/
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.swo
+*~
+
+# Configuration files
+*.properties
+*.config
+
+# Coverage and test reports
+coverage/
+*.lcov
+*.exec
+test-results/
+.jacoco/
+
+# Generated files
+.mvn/
+*.class
+*.project
+
+# Logs and database
+logs/
+*.log
+*.db
+*.sql
+*.sqlite
+
+# Dependency directories
+node_modules/
+target/
+out/
+lib/
+
+# Generated documentation
+/doc/
+>>>>>>> 8f2ab0a (admin panel and other functions)

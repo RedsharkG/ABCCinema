@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 
@@ -9,6 +10,14 @@
     <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+=======
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Management</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 </head>
 <body>
     <div class="container">
@@ -17,6 +26,7 @@
         </jsp:include>
         
         <div class="main-content">
+<<<<<<< HEAD
             <div class="page-header">
                 <h1><i class="fas fa-users"></i> User Management</h1>
                 <div class="header-actions">
@@ -140,5 +150,13 @@
             });
         });
     </script>
+=======
+            <h1>User Management</h1>
+            <div class="users-container">
+                <!-- User management content -->
+            </div>
+        </div>
+    </div>
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 </body>
 </html>

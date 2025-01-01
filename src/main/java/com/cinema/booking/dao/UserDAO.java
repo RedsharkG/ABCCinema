@@ -1,8 +1,11 @@
 package com.cinema.booking.dao;
 
 import java.sql.*;
+<<<<<<< HEAD
 import java.util.ArrayList;
 import java.util.List;
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 import com.cinema.booking.model.User;
 import com.cinema.booking.util.DBConnection;
 import com.cinema.booking.util.PasswordHasher;
@@ -19,7 +22,11 @@ public class UserDAO {
     }
 
     public boolean registerUser(User user) throws SQLException {
+<<<<<<< HEAD
         String sql = "INSERT INTO users (username, password, email, phone_number, nic, gender, role, status) VALUES (?, ?, ?, ?, ?, ?, 'USER', 'active')";
+=======
+        String sql = "INSERT INTO users (username, password, email, phone_number, nic, gender, role) VALUES (?, ?, ?, ?, ?, ?, 'USER')";
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, user.getUsername());
@@ -34,7 +41,11 @@ public class UserDAO {
     }
 
     public User authenticate(String username, String password) throws SQLException {
+<<<<<<< HEAD
         String sql = "SELECT * FROM users WHERE username = ? AND status = 'active'";
+=======
+        String sql = "SELECT * FROM users WHERE username = ?";
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
         try (PreparedStatement stmt = connection.prepareStatement(sql)) {
             stmt.setString(1, username);
             ResultSet rs = stmt.executeQuery();
@@ -48,13 +59,17 @@ public class UserDAO {
                 user.setNic(rs.getString("nic"));
                 user.setGender(rs.getString("gender"));
                 user.setRole(rs.getString("role"));
+<<<<<<< HEAD
                 user.setProfileImageUrl(rs.getString("profile_image_url"));
                 user.setStatus(rs.getString("status"));
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
                 return user;
             }
         }
         return null;
     }
+<<<<<<< HEAD
 
     public User getUserById(int userId) throws SQLException {
         String sql = "SELECT * FROM users WHERE user_id = ?";
@@ -122,4 +137,6 @@ public class UserDAO {
             return stmt.executeUpdate() > 0;
         }
     }
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 }

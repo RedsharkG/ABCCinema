@@ -12,8 +12,11 @@ public class User {
     private String gender;
     private String role;
     private Timestamp createdAt;
+<<<<<<< HEAD
     private String profileImageUrl;
     private String status;
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 
     // Getters and Setters
     public int getUserId() {
@@ -87,6 +90,7 @@ public class User {
     public void setCreatedAt(Timestamp createdAt) {
         this.createdAt = createdAt;
     }
+<<<<<<< HEAD
 
     public String getProfileImageUrl() {
         return profileImageUrl;
@@ -103,4 +107,6 @@ public class User {
     public void setStatus(String status) {
         this.status = status;
     }
+=======
+>>>>>>> b8917e8b3efed89b7a22033da6c1b26eb2efe4ef
 }
