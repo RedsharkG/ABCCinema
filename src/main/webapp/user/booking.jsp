@@ -20,8 +20,7 @@
                                 <h2 class="movie-title gradient-text">${movie.title}</h2>
                                 <div class="movie-meta">
                                     <span class="badge bg-primary"><i class="fas fa-clock"></i> ${movie.duration} mins</span>
-                                    <span class="badge bg-success"><i class="fas fa-star"></i> ${movie.rating}/10</span>
-                                    <span class="badge bg-info"><i class="fas fa-film"></i> Now Showing</span>
+                                    <span class="badge bg-success"><i class="fas fa-star"></i> ${movie.rating}/5</span>
                                 </div>
                             </div>
                         </div>
@@ -29,7 +28,7 @@
                             <img src="${movie.posterUrl}" class="movie-poster" alt="${movie.title}">
                             <div class="movie-info">
                                 <p><i class="fas fa-clock"></i> Duration: ${movie.duration} mins</p>
-                                <p><i class="fas fa-star"></i> Rating: ${movie.rating}/10</p>
+                                <p><i class="fas fa-star"></i> Rating: ${movie.rating}/5</p>
                             </div>
                         </div>
                         <div class="movie-description mt-3">
