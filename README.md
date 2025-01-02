@@ -1,6 +1,6 @@
 # Cinema Booking Admin Panel
 
-A web-based administration panel for managing cinema bookings, built with Java EE and Docker.
+A web-based Movie ticket booking application based on JavaServlets, JSP, HTML, CSS, JavaScripts
 
 ## Prerequisites
 
@@ -81,7 +81,6 @@ Open your Web browser
   - Username: `admin`
   - Password: `admin`
 
-## Container Management
 
 ### View Running applications
 
