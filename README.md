@@ -5,13 +5,13 @@ A web-based administration panel for managing cinema bookings, built with Java E
 ## Prerequisites
 
 ### Required Software
-- Docker Desktop
+- Apache Tomcat 9
 - Visual Studio Code
-- JDK 17 or higher
+- JDK 17 or higher (suggested Jdk 21)
 - Maven
 
 ### VS Code Extensions
-- Docker
+- Prettier
 - Java Extension Pack
 - Maven for Java
 - Extension Pack for Java
@@ -20,80 +20,74 @@ A web-based administration panel for managing cinema bookings, built with Java E
 
 1. **Clone the Repository**
 
-git clone https://github.com/yourusername/CinemaBookingAdminPanel.git
-cd CinemaBookingAdminPanel
+https://github.com/RedsharkG/ABCCinema.git
+
+## Database Importing
+
+- Extract the cinema_db.zip file
+- Open your mysql workbench
+- In servers tab go to data Import
+- Browse your extracted file to the Import from Dump Project Folder
+- Select all Tables
+- Click on start Import
+- Open project's folder in VS code
+- go to util --> DBConnection.java
+- Check mysql DBConnection string's password and username.
+- Change your password and username as same as your mysql local instance password and username
+- Do the step 4
 
 
 2. Open Project in VS Code
 
 code .
 
+3. Verify Maven is installed on your computer
+- mvn --version
 
-3. Build the Project
+4. Build the Project
 
+mvn clean install
 mvn clean package
 
+5. Tomcat Setup
 
-4. Verify Configuration Files
-- **Dockerfile**: Container configuration
-- **docker-compose.yml**: Multi-container setup
-- **src/main/webapp/META-INF/context.xml**: Database connection
+#### Start Tomcat server
+- Go to tomcat(version)/bin
+- Open command prompt
+- On windows run : ./startup.bat
+- On mac run : ./startup.sh
 
-5. Docker Setup
+#### Setup
 
-#### Start Docker Desktop
-- Launch Docker Desktop application
-- Ensure Docker Engine is running
-
-#### Build Docker Images
-
-docker-compose build
+- In VS Code go to servers
+- Add New Server
+- Server on Local Machine
+- open Tomcat 9 Folder (Catalina Home)
+- Rename it as "Cinema_Server"
+- Click finish
+- On Servers, right click on Cinema_Server an click 'Add a Deployment'
+- Browse your Maven project file's target folder and deploy .war file
+- Do the step 4 again
+- After every change run 'mvn package'
 
 
 #### Run the Application
 
-docker-compose up
-
+Open your Web browser
 
 6. Accessing the Application
 - **URL**: [http://localhost:8080](http://localhost:8080)
-- **Default Credentials**:
+- **Default Credentials for manager-gui**:
   - Username: `admin`
-  - Password: `admin123`
+  - Password: `admin`
 
 ## Container Management
 
-### View Running Containers
+### View Running applications
 
-docker ps
-
-
-### Monitor Application Logs
-
-docker-compose logs -f
-
-
-### Stop the Application
-
-docker-compose down
-
-
-### Additional Commands
-
-#### Docker Commands
-
-# Rebuild and restart containers
-docker-compose up --build
-
-# Remove volumes when stopping
-docker-compose down -v
-
-# Check container status
-docker-compose ps
-
+-click on application name.
 
 ## Application Architecture
 
 - **Web Server**: Tomcat (Port 8080)
 - **Database**: MySQL (Port 3306)
-- **Data Storage**: Docker volumes
