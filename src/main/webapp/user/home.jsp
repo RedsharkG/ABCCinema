@@ -219,7 +219,7 @@
                                 </p>
                             </div>
                             <div class="">
-                                <img class="img01 img-fluid" src="images/homeimg02.jpeg" alt="cinemahall">
+                                <img class="img01 img-fluid" src="../images/homeimg02.jpeg" alt="cinemahall">
                             </div>
                         </div>
 
